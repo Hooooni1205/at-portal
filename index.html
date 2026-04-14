@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AT 통합 포털</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard/dist/web/static/pretendard.css"/>
+  <style>
+    :root { 
+      --bg: #0f1115; 
+      --card: #171a21; 
+      --text: #e7e9ee; 
+      --muted: #a7afc0; 
+      --primary: #6c5ce7; 
+      --accent: #f59e0b; 
+      --success: #10b981;
+    }
+    body { 
+      margin: 0; 
+      padding: 0; 
+      background-color: var(--bg); 
+      color: var(--text); 
+      font-family: Pretendard, system-ui, sans-serif; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh; 
+    }
+    .container { 
+      width: 100%; 
+      max-width: 400px; 
+      padding: 30px 20px; 
+      text-align: center; 
+    }
+    .logo { 
+      width: 70px; 
+      height: 70px; 
+      background: linear-gradient(135deg, var(--primary), var(--accent)); 
+      border-radius: 20px; 
+      margin: 0 auto 20px; 
+      box-shadow: 0 10px 25px rgba(108, 92, 231, 0.2); 
+    }
+    .title { 
+      font-size: 24px; 
+      font-weight: 900; 
+      margin-bottom: 8px; 
+      letter-spacing: -0.5px;
+    }
+    .subtitle { 
+      font-size: 14px; 
+      color: var(--muted); 
+      margin-bottom: 40px; 
+    }
+    .link-btn { 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      width: 100%; 
+      background: var(--card); 
+      border: 1px solid rgba(255,255,255,0.06); 
+      padding: 18px; 
+      border-radius: 16px; 
+      color: var(--text); 
+      text-decoration: none; 
+      font-size: 16px; 
+      font-weight: 800; 
+      margin-bottom: 16px; 
+      transition: all 0.2s ease; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    }
+    .link-btn:active { 
+      transform: scale(0.98); 
+    }
+    /* 버튼별 포인트 컬러 */
+    .link-btn.attendance { border-left: 4px solid var(--success); }
+    .link-btn.inventory { border-left: 4px solid var(--primary); }
+    .link-btn.recipe { border-left: 4px solid var(--accent); }
+    
+    .icon { 
+      margin-right: 12px; 
+      font-size: 22px; 
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo"></div>
+    <div class="title">매장 통합 시스템</div>
+    <div class="subtitle">원하시는 업무를 선택해 주세요</div>
+
+    <a href="https://hooooni1205.github.io/attendance/?token=X8mNp2ZrVqL57WJyT3KD" class="link-btn attendance">
+      <span class="icon">⏱️</span> 출퇴근 체크
+    </a>
+
+    <a href="https://hooooni1205.github.io/여기에_재고관리_주소_입력" class="link-btn inventory">
+      <span class="icon">📦</span> 재고 관리 시스템
+    </a>
+
+    <a href="https://hooooni1205.github.io/at-docs" class="link-btn recipe">
+      <span class="icon">🥤</span> 음료 레시피 가이드
+    </a>
+
+    <div class="footer">
+      © Store Management System
+    </div>
+  </div>
+</body>
+</html>

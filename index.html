@@ -137,11 +137,12 @@
       flex-shrink: 0;
     }
 
-    /* 각 앱별 고유 컬러 */
+    /* 각 앱별 고유 컬러 설정 */
+    .icon-schedule { background: linear-gradient(135deg, rgba(211,47,47,0.2), rgba(211,47,47,0.05)); color: #ff5252; border: 1px solid rgba(211,47,47,0.2); }
     .icon-inventory { background: linear-gradient(135deg, rgba(108,92,231,0.2), rgba(108,92,231,0.05)); color: #a29bfe; border: 1px solid rgba(108,92,231,0.2); }
     .icon-recipe { background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.05)); color: #fcd34d; border: 1px solid rgba(245,158,11,0.2); }
-    /* 새로 추가된 근무 시간표 전용 컬러 (AT 레드) */
-    .icon-schedule { background: linear-gradient(135deg, rgba(211,47,47,0.2), rgba(211,47,47,0.05)); color: #ff5252; border: 1px solid rgba(211,47,47,0.2); }
+    /* 🌟 새로 추가된 운영 가이드 전용 컬러 (에메랄드 그린) */
+    .icon-guide { background: linear-gradient(135deg, rgba(16,185,129,0.2), rgba(16,185,129,0.05)); color: #10b981; border: 1px solid rgba(16,185,129,0.2); }
 
     .app-info {
       flex-grow: 1;
@@ -217,8 +218,18 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
         </div>
       </a>
-    </nav>
 
-    </div>
+      <a href="https://hooooni1205.github.io/guide" class="app-card">
+        <div class="app-icon-box icon-guide">📝</div>
+        <div class="app-info">
+          <div class="app-title">운영 가이드</div>
+          <div class="app-desc">매뉴얼 및 위생 점검표</div>
+        </div>
+        <div class="arrow-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </div>
+      </a>
+    </nav>
+  </div>
 </body>
 </html>
